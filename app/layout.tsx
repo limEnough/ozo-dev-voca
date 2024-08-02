@@ -1,6 +1,11 @@
+/** 레이아웃 - UI요소 */
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,12 +16,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<RootLayoutProps>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ko">
+      <body className={inter.className}>
+        {/* Layout UI */}
+        <div className="root-layout">{children}</div>
+      </body>
     </html>
   );
 }
