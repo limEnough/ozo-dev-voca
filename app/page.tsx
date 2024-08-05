@@ -1,7 +1,7 @@
-export default function RootPage() {
+export default function MainPage() {
   return (
-    <main className="root-page">
-      루트 페이지
+    <main className="main-page">
+      메인 페이지
     </main>
   );
 }
