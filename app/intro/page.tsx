@@ -4,8 +4,7 @@ export default function DeshboardPage() {
       <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% py-6 sm:py-12">
         <div className="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
           <div className="mx-auto max-w-md">
-            {/* TODO: 로고추가 */}
-            {/* <img src="/img/logo.svg" className="h-6" alt="Tailwind Play" /> */}
+            <img src="logo.svg" className="h-6" alt="ozo dev voca logo image" />
             <div className="divide-y divide-gray-300/50">
               <div className="space-y-6 py-8 text-base leading-7 text-gray-600">
                 <p>주니어 개발자를 위한 영단어 IT영단어 앱</p>
