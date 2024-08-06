@@ -1,4 +1,11 @@
+import Link from 'next/link'
+
 export default function DeshboardPage() {
+  // #region 
+  const isLogin = false;
+  const toPath = isLogin ? '/' : '/login'; 
+  // #endregion
+  
   return (
     <main className="intro-page">
       <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% py-6 sm:py-12">
@@ -47,7 +54,7 @@ export default function DeshboardPage() {
               <div className="pt-8 text-base font-semibold leading-7">
                 <p className="text-gray-900">내일은 나도 IT영어 천재? 어렵지 않습니다.</p>
                 <p>
-                  <a href="/" className="text-sky-500 hover:text-sky-600">GET START &rarr;</a>
+                  <Link href={toPath} className="text-sky-500 hover:text-sky-600">GET START &rarr;</Link>
                 </p>
               </div>
             </div>
