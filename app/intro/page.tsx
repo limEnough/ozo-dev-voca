@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function DeshboardPage() {
   // #region 
-  const isLogin = false;
+  const isLogin = true;
   const toPath = isLogin ? '/' : '/login'; 
   // #endregion
   
